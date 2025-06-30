@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malmö Green Access Map</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+
+  <!-- Optional: custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h2>Malmö Green Access Map</h2>
+    <label for="bufferSelect">Select buffer distance:</label>
+    <select id="bufferSelect">
+      <option value="0.1">100 m</option>
+      <option value="0.3">300 m</option>
+      <option value="0.5" selected>500 m</option>
+      <option value="1">1000 m</option>
+    </select>
+  </header>
+
+  <div id="map"></div>
+
+  <footer>
+    Data © Malmö Stad — via ArcGIS REST service
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <!-- Turf.js for geospatial calculations -->
+  <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+
+  <!-- Your custom map logic -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
