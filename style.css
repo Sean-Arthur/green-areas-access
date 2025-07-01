@@ -6,7 +6,7 @@ body, html {
 }
 
 #map {
-  height: 90vh; /* Ensures the map fills most of the screen */
+  height: 90vh;
   width: 100%;
 }
 
