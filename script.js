@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const map = L.map('map').setView([55.604981, 13.003822], 12);
 
+  // Set cursor to crosshair to indicate interactivity
+  map.getContainer().style.cursor = 'crosshair';
+
   // Add OpenStreetMap base layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap contributors'
