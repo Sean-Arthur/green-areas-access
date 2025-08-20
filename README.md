@@ -28,7 +28,7 @@ An interactive web map that shows accessibility to green areas in Malmö using L
 
 2. Open `index.html` in your browser.
 
-3. Click anywhere on the map to create a buffer and see nearby green areas.
+3. Select a distance buffer from the dropdown and click on the map to create a buffer and see nearby green areas.
 
 ## Project Structure
 
